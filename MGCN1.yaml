@@ -1,0 +1,98 @@
+# embedding_size: 64
+# n_ui_layers: 2
+# n_layers: 1
+
+# learning_rate_scheduler: [0.96, 50]
+# lambda_coeff: 0.9
+# reg_weight: 1e-04
+
+# knn_k: 10
+
+# learning_rate: 0.001
+
+# cl_loss: [0.001,0.01,0.1]
+
+# hyper_parameters: ["cl_loss"]
+
+
+##########baby############
+embedding_size: 64
+n_ui_layers: 2
+n_layers: 1
+
+learning_rate_scheduler: [0.96, 50]
+lambda_coeff: 0.9
+reg_weight: 1e-04
+
+knn_k: 10
+
+learning_rate: 0.001
+
+cl_loss: 0.001 # [0.001,0.01,0.1]
+
+
+##########sports############
+# embedding_size: 64
+# n_ui_layers: 2
+# n_layers: 1
+
+# learning_rate_scheduler: [0.96, 50]
+# lambda_coeff: 0.9
+# reg_weight: 1e-04
+
+# knn_k: 10
+
+# learning_rate: 0.001
+
+# cl_loss: 0.01 # [0.001,0.01,0.1]
+
+# --- 植入的 AlignRec 时间序列对齐核心逻辑超参数 ---
+# 是否开启时间序列对齐模块 (默认 False 保证与原版一致，这里按要求设为 True 开启)
+use_temporal_align: True
+
+# 是否开启兴趣差异对齐 (默认 False)
+use_interest_align: False
+
+# 兴趣差异计算版本，当前支持 'sub'，后续可扩展 'cos', 'mse' 等
+interest_diff_ver: 'sub'
+
+# TemporalAlignLayer 超参数
+max_len: 50
+align_dropout: 0.1
+# ---------------------------------------------------
+
+
+
+##########clothing############
+# embedding_size: 64
+# n_ui_layers: 2
+# n_layers: 1
+
+# learning_rate_scheduler: [0.96, 50]
+# lambda_coeff: 0.9
+# reg_weight: 1e-04
+
+# knn_k: 10
+
+# learning_rate: 0.001
+
+# cl_loss: 0.01 #[0.001,0.01,0.1]
+
+
+##########microlens############
+# embedding_size: 64
+# n_ui_layers: 2
+# n_layers: 1
+
+# learning_rate_scheduler: [0.96, 50]
+# lambda_coeff: 0.9
+# reg_weight: 1e-04
+
+# knn_k: 10
+
+# learning_rate: 0.001
+
+# cl_loss: 0.01 # [0.001,0.01,0.1]
+
+
+
